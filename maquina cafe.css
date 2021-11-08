@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+}
+.body {
+  height: 200px;
+  width: 183px;
+  background: #adadad;
+  position: absolute;
+  margin: 170px 422px;
+  z-index: -1;
+}
+.body::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  background: grey;
+  z-index: 2;
+  margin: 180px -9px;
+  border-radius: 14px 14px 0 0;
+}
+.body::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 200px;
+  background: #d5d5d5;
+  margin: 198px -9px;
+  z-index: 3;
+  border-radius: 13px 13px 0 0;
+}
+.groupHead {
+  height: 60px;
+  background: #c1c1c1;
+  width: 222px;
+  margin: 170px 401px;
+  position: absolute;
+  border-radius: 8px;
+}
+.groupHead::before {
+  margin: 30px 90px;
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 52px;
+  z-index: 2;
+  background: #2b3333;
+  border-radius: 10px;
+}
+.groupHead::after {
+  margin: 27px 86px;
+  content: "";
+  position: absolute;
+  height: 19px;
+  width: 60px;
+  background: #6a6f6f;
+  border-radius: 10px;
+}
+.left_controls_panels {
+  display: flex;
+  justify-content: space-around;
+  width: 60px;
+  position: absolute;
+  margin: 20px 5px;
+}
+.panel1,
+.panel2 {
+  height: 20px;
+  width: 20px;
+  background: #2b2b2b;
+  border-radius: 20px;
+}
+.panel1::after,
+.panel2::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 7px;
+  margin: 20px 7.3px;
+  background: grey;
+}
+.right_controls_panels {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30px;
+  position: absolute;
+  margin: 5px 180px;
+}
+.plates {
+  height: 18px;
+  width: 5px;
+  background: red;
+}
+.portafilter {
+  height: 20px;
+  position: absolute;
+  width: 50px;
+  background: #441313;
+  margin: 230px 491px;
+  border-radius: 0 0 16px 16px;
+}
+.portafilter::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 10px;
+  background: #f4f4f4;
+  margin: 20px 13px;
+  border-radius: 0 0 12px 12px;
+}
+.cup {
+  position: absolute;
+  height: 40px;
+  width: 59px;
+  background: #fbfbdf;
+  margin: 300px 487px;
+  z-index: 0;
+  border-radius: 0 0 22px 22px;
+}
+.cup::after {
+  transform: skew(-20deg, 0deg);
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 22px;
+  border: 3.4px solid #fbfbdf;
+  margin: 2px 47px;
+  border-radius: 14px;
+}
+.cup::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 82px;
+  background: #f3f3f3;
+  margin: 40px -11px;
+  border-radius: 40% 40% 50% 50%;
+}
+.espresso {
+  width: 3px;
+  background: #731807;
+  position: absolute;
+  margin: 260px 515px;
+  animation: espresso 7s linear 2s;
+}
+.chamber {
+  border-radius: 12px 12px 0 0;
+  height: 85px;
+  width: 160px;
+  background: #878787;
+  margin: 266px 433px;
+  position: absolute;
+  z-index: -1;
+  box-shadow: inset 0px -2px 3px #00000091;
+}
+.chamber::before {
+  border-radius: 0 0 12px 12px;
+  content: "";
+  position: absolute;
+  height: 11px;
+  width: 176px;
+  background: lightgrey;
+  margin: -36px -9px;
+}
+
+@keyframes espresso {
+  10% {
+    height: 0;
+    margin: 260px 515px;
+  }
+  20% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  30% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  40% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  60% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  70% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  80% {
+    height: 50px;
+    margin: 260px 515px;
+  }
+  90% {
+    height: 50px;
+    margin: 300px 515px;
+  }
+  100% {
+    height: 50px;
+    margin: 300px 515px;
+  }
+}
